@@ -46,7 +46,13 @@
       <url>https://oss.sonatype.org/content/repositories/google-snapshots</url>
     </repository>
   </repositories>
-
+  <pluginRepositories>
+    <!-- The gwt-maven-plugin needs this to load kie-wb-common source jars. -->
+    <pluginRepository>
+      <id>jboss-public-repository-group</id>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
   <properties>
     <version.org.kie>7.0.0-SNAPSHOT</version.org.kie>
     <hibernate.validator.version>4.1.0.Final</hibernate.validator.version>
